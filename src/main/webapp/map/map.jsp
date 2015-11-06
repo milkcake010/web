@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>Simple Map</title>
@@ -20,18 +19,13 @@
   </head>
   <body>
     <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
-
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
-
+		var m = new google.maps.Map(map, {
+		    center: {lat: 36.397, lng: 127.644},
+		    zoom: 8
+		  });
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-        async defer></script>
   </body>
 </html>
